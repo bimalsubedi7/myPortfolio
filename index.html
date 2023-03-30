@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assects/css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,24 +78,24 @@
             <nav class="navbar">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <button class="nav-link">About</button>
+                        <button class="nav-link active" nav-data-filter="about">About</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link">Resume</button>
+                        <button class="nav-link" nav-data-filter="resume">Resume</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link">portfolio</button>
+                        <button class="nav-link" nav-data-filter="portfolio">portfolio</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link">Blog</button>
+                        <button class="nav-link" nav-data-filter="blog">Blog</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link">Contact</button>
+                        <button class="nav-link" nav-data-filter="contact">Contact</button>
                     </li>
                 </ul>
             </nav>
 
-            <article class="about">
+            <article class="about page-article" nav-data-filter="about">
                 <header>
                     <h2 class="artical-heading">About Me</h2>
                 </header>
@@ -206,7 +206,7 @@
                 </section>
             </article>
 
-            <article class="resume" style="display: none;">
+            <article class="resume page-article hide" nav-data-filter="resume">
                 <header>
                     <h2 class="artical-heading">Resume</h2>
                 </header>
@@ -301,31 +301,31 @@
                 </section>
             </article>
 
-            <article class="portfolio">
+            <article class="portfolio page-article hide" nav-data-filter="portfolio">
                 <header>
                     <h2 class="artical-heading">Portfolio</h2>
                 </header>
                 <section>
                     <ul class="filter-list">
                         <li class="filter-item">
-                            <button class="active">All</button>
+                            <button class="filter-link active" project-data-filter="all">All</button>
                         </li>
                         <li class="filter-item">
-                            <button class="active">Web Development</button>
+                            <button class="filter-link" project-data-filter="webDevelopment">Web Development</button>
                         </li>
                         <li class="filter-item">
-                            <button class="">SEO</button>
+                            <button class="filter-link" project-data-filter="seo">SEO</button>
                         </li>
                         <li class="filter-item">
-                            <button class="">App Development</button>
+                            <button class="filter-link" project-data-filter="appDevelopment">App Development</button>
                         </li>
                         <li class="filter-item">
-                            <button class="">WordPress</button>
+                            <button class="filter-link" project-data-filter="wordPress">WordPress</button>
                         </li>
                     </ul>
                     <ul class="project-list">
-                        <li class="project-item">
-                            <a href="https://vesperr.bimal-subedi.com.np/">
+                        <li class="project-item" project-data-filter="webDevelopment">
+                            <a href="https://vesperr.bimal-subedi.com.np/" target="_blank">
                                 <figure>
                                     <div class="project-item-icon-box">
                                         <ion-icon name="eye-outline"></ion-icon>
@@ -336,8 +336,8 @@
                                 <p class="project-category">Web Development</p>
                             </a>
                         </li>
-                        <li class="project-item">
-                            <a href="https://forest.bimal-subedi.com.np/">
+                        <li class="project-item" project-data-filter="wordPress">
+                            <a href="https://forest.bimal-subedi.com.np/" target="_blank">
                                 <figure>
                                     <div class="project-item-icon-box">
                                         <ion-icon name="eye-outline"></ion-icon>
@@ -348,7 +348,7 @@
                                 <p class="project-category">WordPress</p>
                             </a>
                         </li>
-                        <li class="project-item">
+                        <li class="project-item" project-data-filter="webDevelopment">
                             <a href="">
                                 <figure>
                                     <div class="project-item-icon-box">
@@ -360,7 +360,7 @@
                                 <p class="project-category">Web Development</p>
                             </a>
                         </li>
-                        <li class="project-item">
+                        <li class="project-item" project-data-filter="webDevelopment">
                             <a href="">
                                 <figure>
                                     <div class="project-item-icon-box">
@@ -372,7 +372,7 @@
                                 <p class="project-category">Web Development</p>
                             </a>
                         </li>
-                        <li class="project-item">
+                        <li class="project-item" project-data-filter="webDevelopment">
                             <a href="">
                                 <figure>
                                     <div class="project-item-icon-box">
@@ -384,8 +384,8 @@
                                 <p class="project-category">Web Development</p>
                             </a>
                         </li>
-                        <li class="project-item">
-                            <a href="https://www.bimal-subedi.com.np/">
+                        <li class="project-item" project-data-filter="webDevelopment">
+                            <a href="https://www.bimal-subedi.com.np/" target="_blank">
                                 <figure>
                                     <div class="project-item-icon-box">
                                         <ion-icon name="eye-outline"></ion-icon>
@@ -396,7 +396,7 @@
                                 <p class="project-category">Web Development</p>
                             </a>
                         </li>
-                        <li class="project-item">
+                        <li class="project-item" project-data-filter="webDevelopment">
                             <a href="">
                                 <figure>
                                     <div class="project-item-icon-box">
@@ -408,7 +408,7 @@
                                 <p class="project-category">Web Development</p>
                             </a>
                         </li>
-                        <li class="project-item">
+                        <li class="project-item" project-data-filter="appDevelopment">
                             <a href="">
                                 <figure>
                                     <div class="project-item-icon-box">
@@ -424,8 +424,39 @@
                 </section>
             </article>
 
+            <article class="contact page-article hide" nav-data-filter="contact">
+                <header>
+                    <h2 class="artical-heading">Contact</h2>
+                </header>
+                <section class="map-box">
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124036.88007143767!2d84.08907824901887!3d27.65622751503788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39945038afa4321d%3A0xaee42f23a1636db6!2z4KSV4KS-4KS14KS-4KS44KWL4KSk4KWA!5e0!3m2!1sne!2snp!4v1680174933256!5m2!1sne!2snp"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3>Contac Form</h3>
+                    <form action="#">
+                        <div class="input-wrapper">
+                            <input class="form-input" type="text" name="fullName" placeholder="Full Name" required>
+                            <input class="form-input" type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <textarea class="form-input" name="message" id="message" placeholder="Your Meaasge"></textarea>
+                        <button class="form-btn" disabled>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+
         </div>
     </main>
+
+    <script src="assects/js/script.js"></script>
 </body>
 
 </html>
