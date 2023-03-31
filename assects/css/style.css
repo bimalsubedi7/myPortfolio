@@ -78,6 +78,7 @@ article {
   padding: 30px;
   border: 1px solid hsl(0, 0%, 22%);
   transition: 0.5s ease-in-out;
+  overflow: hidden;
 }
 
 main {
@@ -1043,8 +1044,13 @@ header {
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 425px) {
+  .sidebar{
+    width: 400px;
+  }
+
   article {
+    width: 400px;
     padding: 15px;
   }
 
