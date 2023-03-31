@@ -946,7 +946,7 @@ header {
     margin-inline: auto;
     margin-bottom: 30px;
     width: 950px;
-    max-height: 180px;
+    /* max-height: 180px; */
     position: static;
     overflow: hidden;
     padding: 30px;
@@ -1061,7 +1061,7 @@ header {
   .sidebar {
     margin-bottom: 15px;
     padding: 15px;
-    max-height: 112px;
+    /* max-height: 112px; */
   }
 
   .sidebar-top {
