@@ -17,19 +17,20 @@
 
 <body>
     <main>
-        <aside>
+        <aside class="sidebar">
             <div class="sidebar-top">
-                <div class="profile-pic">
+                <figure class="profile-pic">
                     <img src="assects/photos/my-avatar.png" alt="">
-                </div>
+                </figure>
                 <div class="profile-content">
                     <h1>Bimal Subedi</h1>
                     <p>Web Developer</p>
                 </div>
+                <button class="more-info-btn">Show Contact</button>
+
             </div>
 
             <div class="divider"></div>
-
             <div class="sidebar-content">
                 <ul class="contact-list">
                     <li>
@@ -97,7 +98,7 @@
 
             <article class="about page-article" nav-data-filter="about">
                 <header>
-                    <h2 class="artical-heading">About Me</h2>
+                    <h2 class="article-heading">About Me</h2>
                 </header>
 
                 <section class="about-text">
@@ -208,7 +209,7 @@
 
             <article class="resume page-article hide" nav-data-filter="resume">
                 <header>
-                    <h2 class="artical-heading">Resume</h2>
+                    <h2 class="article-heading">Resume</h2>
                 </header>
                 <section class="timeline">
                     <div class="title-wrapper">
@@ -303,7 +304,7 @@
 
             <article class="portfolio page-article hide" nav-data-filter="portfolio">
                 <header>
-                    <h2 class="artical-heading">Portfolio</h2>
+                    <h2 class="article-heading">Portfolio</h2>
                 </header>
                 <section>
                     <ul class="filter-list">
@@ -349,7 +350,7 @@
                             </a>
                         </li>
                         <li class="project-item" project-data-filter="webDevelopment">
-                            <a href="">
+                            <a href="https://clock.bimal-subedi.com.np/" target="_blank">
                                 <figure>
                                     <div class="project-item-icon-box">
                                         <ion-icon name="eye-outline"></ion-icon>
@@ -426,7 +427,7 @@
 
             <article class="contact page-article hide" nav-data-filter="contact">
                 <header>
-                    <h2 class="artical-heading">Contact</h2>
+                    <h2 class="article-heading">Contact</h2>
                 </header>
                 <section class="map-box">
                     <figure>
@@ -439,12 +440,12 @@
 
                 <section class="contact-form">
                     <h3>Contac Form</h3>
-                    <form action="#">
+                    <form action="#" class="form">
                         <div class="input-wrapper">
-                            <input class="form-input" type="text" name="fullName" placeholder="Full Name" required>
-                            <input class="form-input" type="email" name="email" placeholder="Email Address" required>
+                            <input class="form-input" type="text" name="fullName" placeholder="Full Name" data-form-input required>
+                            <input class="form-input" type="email" name="email" placeholder="Email Address" data-form-input required>
                         </div>
-                        <textarea class="form-input" name="message" id="message" placeholder="Your Meaasge"></textarea>
+                        <textarea class="form-input" name="message" id="message" placeholder="Your Meaasge" data-form-input required ></textarea>
                         <button class="form-btn" disabled>
                             <ion-icon name="paper-plane-outline"></ion-icon>
                             <span>Send Message</span>

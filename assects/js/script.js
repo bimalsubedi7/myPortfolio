@@ -12,7 +12,6 @@ for (let i = 0; i < navList.length; i++) {
     this.classList.add("active");
 
     let navDataFilter = this.getAttribute("nav-data-filter");
-    console.log(navDataFilter);
 
     for (let k = 0; k < pageArticle.length; k++) {
       pageArticle[k].classList.add("hide");
@@ -45,5 +44,24 @@ for (let i = 0; i < filterList.length; i++) {
         projectList[k].classList.remove("hide");
       }
     }
+  });
+}
+
+
+
+
+const form = document.querySelector(".form");
+const formInputs = document.querySelectorAll("[data-form-input]")
+const formBtn = document.querySelector(".form-btn");
+
+for (let i = 0; i < formInputs.length; i++) {
+  formInputs[i].addEventListener("input", function () {
+
+    if (form.checkValidity()) {
+      formBtn.removeAttribute("disabled");
+    } else {
+      formBtn.setAttribute("disabled", "");
+    }
+
   });
 }
