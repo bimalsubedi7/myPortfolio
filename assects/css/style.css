@@ -564,6 +564,10 @@ header {
   position: relative;
 }
 
+.timeline-item li{
+  list-style: circle;
+}
+
 .timeline-item:not(:last-child)::before {
   content: "";
   width: 1px;
